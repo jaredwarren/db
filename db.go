@@ -226,7 +226,7 @@ func New(username, password, host, port, path string) (*Database, error) {
 func Connect(dsn *DSN) (*Database, error) {
 	// Connect to ssh
 	if dsn.SSH != nil {
-		err := dsn.SSH.Connect()
+		_, err := dsn.SSH.Connect()
 		if err != nil {
 			return nil, err
 		}
