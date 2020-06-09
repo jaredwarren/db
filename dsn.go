@@ -4,7 +4,7 @@ import (
 	"encoding/base64"
 	"fmt"
 
-	ssh "github.com/jaredwarren/ssh"
+	"github.com/jaredwarren/ssh"
 )
 
 // DSN ...
